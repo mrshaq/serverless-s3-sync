@@ -30,6 +30,7 @@ custom:
     - bucketName: my-static-site-assets # required
       bucketPrefix: assets/ # optional
       localDir: dist/assets # required
+      accessControl: public-read #optional
     - bucketName: my-other-site
       localDir: path/to/other-site
 

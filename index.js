@@ -60,6 +60,7 @@ class ServerlessS3Sync {
           deleteRemoved: true,
           followSymlinks: false,
           s3Params: {
+            ACL: s.accessControl || 'private',
             Bucket: s.bucketName,
             Prefix: s.bucketPrefix
           }
